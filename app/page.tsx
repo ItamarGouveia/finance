@@ -1,7 +1,8 @@
+import { Button } from "./_components/ui/button";
 
 
 export default function Home() {
   return (
-   <h1>flkajslfdska</h1>
+   <Button>flakjslf</Button>
   );
 }
