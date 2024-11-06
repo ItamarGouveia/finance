@@ -13,43 +13,43 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
-model Transaction{
-  id String @id @default(uuid())
-  name String
-  type TransactionType
-  amount Decimal @db.Decimal(10,2)
-  category TransactionCategory
+model Transaction {
+  id            String                   @id @default(uuid())
+  name          String
+  type          TransactionType
+  amount        Decimal                  @db.Decimal(10, 2)
+  category      TransactionCategory
   paymentMethod TransactionPaymentMethod
-  date DateTime
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now())
+  date          DateTime
+  createdAt     DateTime                 @default(now())
+  updatedAt     DateTime                 @updatedAt
+  userId        String
 }
 
-  enum TransactionType{
-    DEPOSIT
-    EXPENSE
-    INVESTMENT
-  }
+enum TransactionType {
+  DEPOSIT
+  EXPENSE
+  INVESTMENT
+}
 
-  enum TransactionCategory{
-    HOUSING
-    TRANSPORTATION
-    FOOD
-    ENTERTAIMENT
-    HEALTH
-    UTILITY
-    SALARY
-    EDUCATION
-    OTHER
-  }
+enum TransactionCategory {
+  HOUSING
+  TRANSPORTATION
+  FOOD
+  ENTERTAIMENT
+  HEALTH
+  UTILITY
+  SALARY
+  EDUCATION
+  OTHER
+}
 
-  enum TransactionPaymentMethod{
-    CREDIT_CARD
-    DEBIT_CARD
-    BANK_TRANSFER
-    BANK_SLIP
-    CASH
-    PIX
-    OTHER
-  }
+enum TransactionPaymentMethod {
+  CREDIT_CARD
+  DEBIT_CARD
+  BANK_TRANSFER
+  BANK_SLIP
+  CASH
+  PIX
+  OTHER
+}

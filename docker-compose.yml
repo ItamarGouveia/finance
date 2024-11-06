@@ -1,15 +1,15 @@
 services:
   postgres:
     image: postgres:latest
-    container_name: finance
+    container_name: fina
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: finance-db
+      POSTGRES_DB: db-finance
     ports:
       - "5432:5432"
     volumes:
-      - ./postgres-db:/var/lib/postgresql/data
+      - ../db:/var/lib/postgresql/data
 
 volumes:
   .postgres-db:
