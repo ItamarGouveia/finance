@@ -1,6 +1,6 @@
-# Finanças SaaS com Next.js, React e Hono
+# Finanças SaaS com Next.js, React, Hono e shadcn/ui
 
-Uma plataforma **SaaS de finanças** construída com **Next.js**, **React**, **HonoJS** e **Drizzle ORM**, com suporte a **upload de CSV** para importar dados financeiros.  
+Uma plataforma **SaaS de finanças** construída com **Next.js**, **React**, **HonoJS**, **Drizzle ORM** e **shadcn/ui**, com suporte a **upload de CSV** para importar dados financeiros.  
 Este projeto foi inspirado no tutorial [Build a Finance SaaS Platform With Nextjs, React, Honojs with CSV Upload](https://www.youtube.com/watch?v=N_uNKAus0II) do canal *Code With Antonio*.
 
 ---
@@ -13,6 +13,7 @@ Este projeto foi inspirado no tutorial [Build a Finance SaaS Platform With Nextj
 - **Drizzle ORM** — ORM para banco de dados relacional  
 - **Clerk** — Autenticação de usuários (login, cadastro, sessão)  
 - **Neon DB** — Banco de dados PostgreSQL escalável na nuvem  
+- **shadcn/ui** — Biblioteca de componentes acessíveis e estilizados  
 - **Upload CSV** — Importação e tratamento de dados financeiros
 
 ---
@@ -90,7 +91,7 @@ Abra no navegador: [http://localhost:3000](http://localhost:3000)
 - 📊 Visualização dos dados em tabelas e gráficos  
 - 🗄️ Integração com **Neon DB** via Drizzle ORM  
 - ⚡ Backend rápido e escalável com **HonoJS**  
-- 🎨 Interface moderna construída em **React + Tailwind**  
+- 🎨 Interface moderna com **React + Tailwind + shadcn/ui**  
 
 ---
 
@@ -139,4 +140,5 @@ Este projeto está licenciado sob a **MIT License**. Consulte o arquivo [LICENSE
 - [HonoJS](https://hono.dev/)  
 - [Drizzle ORM](https://orm.drizzle.team/)  
 - [Neon DB](https://neon.tech/)  
-- [Clerk](https://clerk.com/)
+- [Clerk](https://clerk.com/)  
+- [shadcn/ui](https://ui.shadcn.com/)
